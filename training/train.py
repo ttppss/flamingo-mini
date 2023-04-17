@@ -106,6 +106,9 @@ class FlamingoTrainingArguments(TrainingArguments):
     # eval_coco_captioning_prefix: str = field(default="<image>A picture of")         # It's a common thing to do for COCO image captioning
     eval_coco_captioning_start: int = field(default=0)
     eval_coco_captioning_end: int = field(default=1000)
+        
+    output_dir: str = field(default='./output')
+    save_total_limit: int = field(default=1)
     
 
 class FlamingoTrainer(Trainer):
