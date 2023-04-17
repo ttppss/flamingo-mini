@@ -6,7 +6,7 @@ NUM_GPU=1
 ARGS="
 --output_dir ./output
 --run_name flamingo-tiny-vitL
---do_train 
+--do_train
 --do_eval
 --optim adamw_torch
 --learning_rate 0.0001 
