@@ -1,10 +1,10 @@
 #!/bin/env bash
 
-export CUDA_VISIBLE_DEVICES=2,3
-NUM_GPU=2
+export CUDA_VISIBLE_DEVICES=0,
+NUM_GPU=1
 
 ARGS="
---output_dir ./flamingo-coco
+--output_dir ./output
 --run_name flamingo-tiny-vitL
 --do_train --do_eval
 --optim adamw_torch
@@ -17,7 +17,7 @@ ARGS="
 --evaluation_strategy steps
 --eval_steps 1000
 --save_strategy epoch
---save_total_limit 2
+--save_total_limit 1
 --log_level info
 --dataloader_num_workers 8
 --dataloader_pin_memory True
