@@ -28,8 +28,7 @@ ARGS="
 
 echo $ARGS
 
-if [ $NUM_GPU == 1 ]; then
-    echo "running on a single GPU"
+if [ $NUM_GPU == 1 ]; 
     python train.py $ARGS
 else
     echo "running on multiple GPUs"
