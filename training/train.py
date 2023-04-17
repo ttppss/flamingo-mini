@@ -30,8 +30,8 @@ logger = logging.getLogger(__name__)
 
 # get images and annotations from https://cocodataset.org/#download
 COCO_ROOT      = '/kaggle/input'
-COCO_ANN_TRAIN = '/kaggle/input/annotation-v2/caption_2m_train_v1.json'
-COCO_ANN_VAL   = '/kaggle/input/annotation-v2/caption_2m_val_v1.json'
+COCO_ANN_TRAIN = '/kaggle/input/annotation-v2/caption_2m_train_v2.json'
+COCO_ANN_VAL   = '/kaggle/input/annotation-v2/caption_2m_val_v2.json'
 
 
 class CLIPImageTransform:
