@@ -167,7 +167,7 @@ if __name__ == '__main__':
     logger.info('loading model...')
     config = FlamingoConfig(
         clip_model_type='openai/clip-vit-large-patch14',
-        lm='facebook/opt-125m',
+        lm='facebook/opt-1.3b',
         dim=768,
         dim_visual=1024,
         xattn_act='sqrelu',
